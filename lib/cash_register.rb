@@ -22,6 +22,6 @@ class CashRegister
   end
   
   def items
-    return @@items
+    return @@items.uniq
   end
 end
