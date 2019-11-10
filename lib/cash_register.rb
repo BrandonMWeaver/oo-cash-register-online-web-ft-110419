@@ -39,6 +39,5 @@ class CashRegister
       i += 1
     end
     @total -= @item_prices.pop * @quantities.pop
-    
   end
 end
