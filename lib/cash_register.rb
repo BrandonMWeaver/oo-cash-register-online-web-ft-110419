@@ -33,7 +33,12 @@ class CashRegister
   end
   
   def void_last_transaction
+    i = 0
+    while i < @quantities.last do
+      @items.pop
+      i += 1
+    end
     @total -= @item_prices.pop * @quantities.pop
-    @items.pop
+    
   end
 end
