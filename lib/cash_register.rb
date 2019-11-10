@@ -36,7 +36,6 @@ class CashRegister
     i = 0
     while i < @quantities.pop do
       @total -= @item_prices.pop
-      @items.pop
       i += 1
     end
   end
